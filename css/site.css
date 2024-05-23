@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+h1, h2, h3, p, a{
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html, body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.body-index-background {
+    min-height: 100vh;
+    align-items: center;
+    color: white;
+}
+
+.navbar-toggler {
+    border: 1px transparent;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+@media (min-width: 768px) {
+    .nav-link{
+        font-weight: 500;
+    }
+
+    .nav-link:hover{
+        color: #0b5ed7 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-link:hover{
+        color: white !important;
+    }
+    .nav-link:focus{
+        color: darkgrey !important;
+    }
+}
+
+.btn-close {
+    filter: var(--bs-btn-close-white-filter);
+    --bs-btn-close-focus-shadow: none;
+}
+
+.main-button{
+    box-shadow: 0 0 darkblue;
+}
+
+.btn {
+    background-color: #0968ff;
+    border-color: #0968ff;
+    transition: 0.3s;
+}
+.main-button:hover{
+
+    box-shadow: 4px 6px rgb(23 52 166 / 80%);
+}
+ /*** Use if issues occur with dropdown in off canvas***/
+/*@media (max-width: 767px) {
+    .dropdown:checked .dropdown-menu {}
+}*/
+
+@media (min-width: 768px) {
+    .dropdown-menu{
+        opacity: 0;
+        display: block;
+        visibility: collapse;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* remove the gap so it doesn't close */
+        opacity: 1;
+        transition: all 0.4s;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 767px) {
+    .offcanvas-body{
+        background-color: rgb(var(--bs-dark-rgb));
+    }
+
+    .nav-link{
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    /***spreads navbar, change if issues occur in other areas using variable below***/
+    .me-auto{
+        padding-left: 25%;
+    }
+
+    .nav-item{
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-item{
+        padding-right: 80px;
+    }
+}
+
+.body-index-background h1 {
+    position: relative;
+}
+
+.welcome {
+    min-height: 60vh;
+}
+
+.welcome-button {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.welcome-button:after {
+    content: '';
+    position: absolute;
+    background-color: #cc3f4e;
+    width: 50%;
+    height: 40px;
+    top: 0;
+    right: -10px;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+.welcome-button:hover:after {
+    width: 115%;
+}
+
+.scroll-element {
+    margin-top: 25%;
+    transition: all 2s;
+    opacity: 0;
+}
+
+.scroll-element.visible {
+    opacity: 1;
+}
+
+.cream-bg{
+    /*#f3eae3*/
+    min-height: 60vh;
+    background-color:#f3eae3;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.square {
+    width: 100px;
+    height: 50vh;
+    color: #0a53be;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden {
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.card-delay:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.card-delay:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.text-body {
+    font-size: 1.4rem;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card h3{
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: rgb(177, 177, 177);
+}
+
+.card p {
+    line-height: 1.4em;
+}
+
+.icon {
+    text-decoration: none;
+}

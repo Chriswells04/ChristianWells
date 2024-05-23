@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Project</title>
+
+    <link href="./css/bootstrap.css" rel="stylesheet"/>
+    <link href="./css/site.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="./js/bootstrap.bundle.js"> </script>
+    <script defer src="./js/custom.js"></script>
+
+</head>
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand">Personal Page</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarCanvas" aria-controls="navbarCanvas" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarCanvas" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-dark text-white">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-light">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">   
+                                <a class="nav-link" aria-current="page" href="#">Second</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-current="page" href="#" aria-expanded="true">Third</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="flex-shrink-0">
+        <div class="container">
+            <div class="text-dark text-center scroll-element welcome">
+                <h1 class="mt-5"> My Personal Page </h1>
+                <button type="button" class="welcome-button">Show Projects</button>
+            </div>
+        </div>
+        <div class="cream-bg">
+            <div class="container">
+                <div class="row g-5 justify-content-evenly">
+                    <div class="col-lg-6">
+                        <div class="container">
+                            <h3>Description</h3>
+                            <p class="text-body mt-5">
+                                Hi my name is Chris, I am Second year student at the University Of Chester. My course will contain a
+                                placement year, where I will be working as an IT developer.
+                            </p>
+                            <p class="text-body">
+                                My projects that I have completed personally and within my academic studies will be viewable on this page
+                                as they are developed and completed.
+                            </p>
+                            <a class="icon me-1" href="https://github.com/Chriswells04" target="_blank">
+                                <i class="bi bi-github" ></i>
+                            </a>
+                            <a class="icon me-1" href="https://www.linkedin.com/in/christian-wells-0237b0256/" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a class="icon" href="https://github.com/Chriswells04" target="_blank">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <h3> Highlighted Projects </h3>
+                        </div>
+                        <div class="card hidden card-delay">
+                            <div class="row g-0">
+                                <div class="col-6 col-md-5">
+                                    <img src="./img/Android.jpg" class="card-img img-fluid rounded-start" alt="code"/>
+                                </div>
+                                <div class="col-6 col-md-7">
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="h-100">
+                                            <h3 class="card-title">Projects</h3>
+                                            <h2 class="card-title">Android Application </h2>
+                                            <p class="card-text"> This is a description about what this project is.
+                                                Add projects from GitHub into these cards
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark main-button mt-3" onclick="goToLink(this)" value="https://github.com/Chriswells04">
+                                                View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3 hidden card-delay">
+                            <div class="row g-0">
+                                <div class="col-6 col-md-5">
+                                    <img src="./img/C++_logo43.png" class="card-img img-fluid rounded-start" alt="code"/>
+                                </div>
+                                <div class="col-6 col-md-7">
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="h-100">
+                                            <h3 class="card-title">Projects</h3>
+                                            <h2 class="card-title">C++ </h2>
+                                            <p class="card-text"> This is a description about what this project is.
+                                                Add projects from GitHub into these cards
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark main-button mt-3" onclick="goToLink(this)" value="https://github.com/Chriswells04">
+                                                View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3 hidden card-delay">
+                            <div class="row g-0">
+                                <div class="col-6 col-md-5">
+                                    <img src="./img/python-code-logo-scaled.jpg" class="card-img img-fluid rounded-start" alt="code"/>
+                                </div>
+                                <div class="col-6 col-md-7">
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="h-100">
+                                            <h3 class="card-title">Projects</h3>
+                                            <h2 class="card-title">Data Analysis</h2>
+                                            <p class="card-text"> This is a description about what this project is.
+                                                Add projects from GitHub into these cards
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark main-button mt-3" onclick="goToLink(this)" value="https://github.com/Chriswells04">
+                                                View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mt-auto bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Christian Wells, All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
